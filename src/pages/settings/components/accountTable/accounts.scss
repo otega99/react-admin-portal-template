@@ -1,0 +1,24 @@
+.add{
+    float:right;
+}
+.accountTable_tableHead{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 15px 10px;
+    width:100%;
+    margin-top:70px;
+}
+.accountTable_tableItem{
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+}
+.accounts__skeletonBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+.accounts__skeleton {
+    height: 70px;
+} 

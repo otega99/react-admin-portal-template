@@ -1,0 +1,18 @@
+@use 'styles' as *;
+
+.currencyDelete {
+  padding: 20px;
+  width: 600px;
+
+  .currencyDelete__text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .currencyDelete__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}

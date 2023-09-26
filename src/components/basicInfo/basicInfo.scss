@@ -1,0 +1,12 @@
+@use 'styles' as *;
+
+.basicInfo {
+  .basicInfo__header {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+  }
+
+  .basicInfo__text {
+    font-weight: 500;
+  }
+}

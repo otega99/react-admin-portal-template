@@ -1,0 +1,44 @@
+@use 'styles' as *;
+
+.admin {
+  .admin__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .admin__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .admin__headSkeleton {
+    width: 70px;
+    height: 20px;
+  }
+
+  .admin__table {
+    padding: 20px;
+    background-color: color(sn-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+
+  .admin__tableHead {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 15px 10px;
+  }
+
+  .admin__tableHeadItem {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+  }
+
+  .admin__pagination {
+    margin-top: 20px;
+  }
+}

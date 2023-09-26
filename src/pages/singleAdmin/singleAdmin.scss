@@ -1,0 +1,28 @@
+@use 'styles' as *;
+
+.singleAdmin {
+  .singleAdmin__btnDiv {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .singleAdmin__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  .singleAdmin__grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+
+    @include maxWidth(breakpoint(tablet)) {
+      flex-direction: column;
+    }
+  }
+}

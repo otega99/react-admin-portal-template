@@ -1,0 +1,25 @@
+@use 'styles' as *;
+
+.formTextarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .formTextarea__input {
+    outline: none;
+    padding: 15px 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background-color: color(sn-gray);
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+
+    &:focus {
+      background-color: color(sn-white);
+    }
+
+    &::placeholder {
+      color: #5a5a5a;
+    }
+  }
+}

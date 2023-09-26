@@ -1,0 +1,47 @@
+@use 'styles' as *;
+
+.profileDetails {
+  background: color(sn-white);
+  box-shadow: 0px 4px 8px 2px rgba(32, 32, 32, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+
+  .profileDetails__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .profileDetails__headInfo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .profileDetails__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profileDetails__name {
+    font-weight: 600;
+  }
+
+  .profileDetails__btn {
+    background-color: color(sn-black);
+    color: color(sn-white);
+    border: 1px solid color(sn-black);
+  }
+
+  .profileDetails__header {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .profileDetails__infoBox {
+    margin-bottom: 10px;
+  }
+}

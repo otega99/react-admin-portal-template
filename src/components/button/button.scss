@@ -1,0 +1,93 @@
+@use 'styles' as *;
+
+$btnVariants: plain, primary, secondary, primaryOutline, secondaryOutline, grayColor, danger;
+
+$btnValues: (
+  plain: (
+    background-color: transparent,
+    color: color(sn-black),
+    border: 1px solid transparent,
+    outline: 2px solid color(sn-primary)
+  ),
+  primary: (
+    background-color: color(sn-primary),
+    color: color(sn-black),
+    border: 1px solid color(sn-primary),
+    outline: 2px solid color(sn-primary)
+  ),
+  secondary: (
+    background-color: rgb(70, 163, 224),
+    color: white,
+    border: 1px solid rgb(70, 163, 224),
+    outline: 2px solid rgb(70, 163, 224)
+  ),
+  primaryOutline: (
+    background-color: transparent,
+    color: color(sn-primary),
+    border: 1px solid color(sn-primary),
+    outline: 2px solid color(sn-primary)
+  ),
+  secondaryOutline: (
+    background-color: transparent,
+    color: rgb(70, 163, 224),
+    border: 1px solid rgb(70, 163, 224),
+    outline: 2px solid rgb(70, 163, 224)
+  ),
+  grayColor: (
+    background-color: rgba(213, 207, 207, 0.3),
+    color: #c5bfbf,
+    border: 1px solid rgba(213, 207, 207, 0.3),
+    outline: 2px solid rgba(213, 207, 207, 0.3)
+  ),
+  danger: (
+    background-color: color(sn-danger),
+    color: color(sn-white),
+    border: 1px solid color(sn-danger),
+    outline: 2px solid color(sn-danger)
+  )
+);
+
+@function getBtnValue($name, $property) {
+  @return map-get(map-get($btnValues, $name), $property);
+}
+
+.button {
+  outline: none;
+  border-radius: 5px;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+
+  @each $name in $btnVariants {
+    &.button--#{$name} {
+      background-color: getBtnValue($name, background-color);
+      color: getBtnValue($name, color);
+      border: getBtnValue($name, border);
+
+      &:focus {
+        outline: getBtnValue($name, outline);
+        outline-offset: 1px;
+      }
+    }
+  }
+
+  &.button--fullWidth {
+    width: 100%;
+    display: block;
+  }
+
+  &.button--disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &.button--loading {
+    @extend .button--disabled;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

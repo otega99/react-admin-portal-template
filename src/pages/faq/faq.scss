@@ -1,0 +1,46 @@
+@use 'styles' as *;
+
+.faq {
+  .faq__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .faq__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .faq__headSkeleton {
+    width: 70px;
+    height: 20px;
+  }
+
+  .faq__error,
+  .faq__emptyBox {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/3;
+  }
+
+  .faq__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @include maxWidth(breakpoint(mobile)) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .faq__skeleton {
+    height: 265px;
+  }
+
+  .faq__pagination {
+    margin-top: 40px;
+  }
+}

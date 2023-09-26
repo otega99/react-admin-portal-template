@@ -1,0 +1,100 @@
+@use 'styles' as *;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pagination__page {
+    width: 30px;
+    margin: 0 5px;
+    background-color: color(sn-white);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: color(sn-black);
+    border-radius: 2px;
+
+    &.active,
+    &:hover {
+      // color: $deepBlue;
+      background-color: color(sn-primary);
+      color: white;
+    }
+
+    &.dot {
+      width: 15px;
+      height: 15px;
+      color: transparent;
+      margin-right: 15px;
+      border-radius: 50%;
+      // background-color: lighten(color(blue), 30%);
+      cursor: pointer;
+      overflow: hidden;
+      font-size: 0px;
+
+      &.active {
+        background-color: blue;
+      }
+    }
+  }
+
+  .pagination__dot {
+    width: 30px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 2px;
+    background-color: color(sn-white);
+    color: color(sn-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination__dotSpan {
+    height: 1px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .pagination__next,
+  .pagination__prev {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    background-color: color(sn-white);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: color(sn-primary);
+      color: white;
+    }
+  }
+
+  .pagination__prev {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  // .pagination__nextText {
+  //   position: absolute;
+  //   bottom: -10px;
+  //   font-size: 0.8rem;
+  //   left: 3px;
+  //   opacity: 0;
+  //   transition: 0.4s;
+  // }
+}
+/**************************************
+End: Styles for pagination component
+**************************************/

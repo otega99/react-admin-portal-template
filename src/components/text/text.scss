@@ -1,0 +1,104 @@
+@use 'styles' as *;
+
+$textVariants: tiny, footnote, caption, body, medium, h1, h2, h3, h4, h5, h6, displaySmall,
+  displayMedium, displayLarge;
+
+$textValues: (
+  tiny: (
+    font-size: 0.625rem,
+    font-weight: 400
+  ),
+  footnote: (
+    font-size: 0.75rem,
+    font-weight: 400
+  ),
+  caption: (
+    font-size: 0.875rem,
+    font-weight: 400
+  ),
+  body: (
+    font-size: 1rem,
+    font-weight: 400
+  ),
+  medium: (
+    font-size: 1.1875rem,
+    tab-size: 1.125rem,
+    mobile-size: 1.0625rem,
+    font-weight: 400
+  ),
+  h1: (
+    font-size: 3.125rem,
+    tab-size: 2.3125rem,
+    mobile-size: 1.8125rem,
+    font-weight: 600
+  ),
+  h2: (
+    font-size: 2.3125rem,
+    tab-size: 1.8125rem,
+    mobile-size: 1.5rem,
+    font-weight: 600
+  ),
+  h3: (
+    font-size: 1.8125rem,
+    tab-size: 1.5rem,
+    mobile-size: 1.3125rem,
+    font-weight: 600
+  ),
+  h4: (
+    font-size: 1.5rem,
+    tab-size: 1.3125rem,
+    mobile-size: 1.1875rem,
+    font-weight: 600
+  ),
+  h5: (
+    font-size: 1.3125rem,
+    tab-size: 1.1875rem,
+    mobile-size: 1.125rem,
+    font-weight: 600
+  ),
+  h6: (
+    font-size: 1.1875rem,
+    tab-size: 1.125rem,
+    mobile-size: 1.0625rem,
+    font-weight: 600
+  ),
+  displaySmall: (
+    font-size: 4.4375rem,
+    tab-size: 3.125rem,
+    mobile-size: 2.3125rem,
+    font-weight: 600
+  ),
+  displayMedium: (
+    font-size: 6.5625rem,
+    tab-size: 4.4375rem,
+    mobile-size: 3.125rem,
+    font-weight: 600
+  ),
+  displayLarge: (
+    font-size: 10rem,
+    tab-size: 6.5625rem,
+    mobile-size: 4.4375rem,
+    font-weight: 600
+  )
+);
+
+@function getTextValue($name, $property) {
+  @return map-get(map-get($textValues, $name), $property);
+}
+
+.text {
+  @each $name in $textVariants {
+    &.text--#{$name} {
+      font-size: getTextValue($name, font-size);
+      font-weight: getTextValue($name, font-weight);
+
+      @include maxWidth(1023px) {
+        font-size: getTextValue($name, tab-size);
+      }
+
+      @include maxWidth(767px) {
+        font-size: getTextValue($name, mobile-size);
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use 'styles' as *;
+
+.adminTable__table {
+  padding: 20px;
+  background-color: color(sn-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow-x: auto;
+
+  .adminTable__tableHead {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 15px 10px;
+    min-width: 600px;
+  }
+
+  .adminTable__tableHeadItem {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+  }
+
+  .adminTable__skeletonBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .adminTable__skeleton {
+    height: 70px;
+  }
+}
+
+.adminTable__pagination {
+  margin-top: 20px;
+}

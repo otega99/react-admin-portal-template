@@ -1,0 +1,17 @@
+@use 'styles' as *;
+
+.modalBox {
+  width: 500px;
+  padding: 30px;
+
+  .modalBox__text {
+    text-align: center;
+  }
+
+  .modalBox__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,10 @@
+@use 'styles' as *;
+
+.addForm {
+  width: 100%;
+  max-width: 800px;
+
+  .addForm__btnDiv {
+    width: auto;
+  }
+}

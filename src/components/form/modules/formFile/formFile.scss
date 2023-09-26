@@ -1,0 +1,26 @@
+@use 'styles' as *;
+
+.formFile {
+  margin-bottom: 20px;
+
+  .formFile__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .formFile__input {
+    display: none;
+  }
+}
+
+.filePreview {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+
+  .filePreview__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

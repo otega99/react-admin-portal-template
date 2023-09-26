@@ -1,0 +1,12 @@
+@use 'styles' as *;
+
+.faqForm {
+  padding: 20px;
+  background-color: color(sn-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  .faqForm__form {
+    max-width: 700px;
+  }
+}

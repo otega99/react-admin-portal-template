@@ -1,0 +1,9 @@
+@use "styles" as *;
+
+.errorMsg {
+  color: color(sn-danger);
+  // background-color: transparentize(red, 0.8);
+  padding: 2px 10px;
+  border-radius: 0 0 5px 5px;
+  font-size: 0.8rem;
+}

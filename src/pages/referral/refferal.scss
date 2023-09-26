@@ -1,0 +1,66 @@
+@use 'styles' as *;
+
+.app {
+  .app__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  .select {
+    width: 200px;
+  }
+
+
+  .app__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .app__headSkeleton {
+    width: 70px;
+    height: 20px;
+  }
+
+  .app__table {
+    padding: 20px;
+    background-color: color(sn-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .app__tableHead {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 15px 10px;
+    gap: 10px;
+    min-width: 650px;
+  }
+
+  .app__tableHeadItem {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+  }
+
+  .app__skeletons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.app__pagination {
+  margin-top: 20px;
+}

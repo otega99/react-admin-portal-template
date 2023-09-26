@@ -1,0 +1,66 @@
+@use 'styles' as *;
+
+.dashboard {
+  .dashboard__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+
+    @include maxWidth(breakpoint(tablet)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include maxWidth(breakpoint(mobile)) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .dashboard__box {
+    &.four,
+    &.five {
+      grid-column: 1/3;
+
+      @include maxWidth(breakpoint(tablet)) {
+        grid-column: 1/3;
+      }
+
+      @include maxWidth(breakpoint(mobile)) {
+        grid-column: 1/2;
+      }
+    }
+
+    &.four {
+      grid-row: 2/3;
+      overflow-x: auto;
+
+      @include maxWidth(breakpoint(tablet)) {
+        grid-row: auto;
+      }
+    }
+
+    &.five {
+      grid-row: 3/4;
+      overflow-x: auto;
+
+      @include maxWidth(breakpoint(tablet)) {
+        grid-row: auto;
+      }
+    }
+
+    &.six {
+      grid-row: 2/4;
+      grid-column: 3/4;
+      height: auto;
+
+      @include maxWidth(breakpoint(tablet)) {
+        grid-column: 1/3;
+        grid-row: auto;
+      }
+
+      @include maxWidth(breakpoint(mobile)) {
+        grid-column: 1/2;
+      }
+    }
+  }
+}

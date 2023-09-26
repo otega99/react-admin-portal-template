@@ -1,0 +1,60 @@
+@use 'styles' as *;
+
+.infoSection {
+  box-shadow: 0px 4px 8px 2px rgba(32, 32, 32, 0.05);
+  border-radius: 10px;
+  background-color: color(sn-white);
+
+  .infoSection__error {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoSection__first {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .infoSection__imgDiv {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .infoSection__imgSkeleton {
+    height: 100%;
+  }
+
+  .infoSection__nameSkeleton {
+    height: 20px;
+  }
+
+  .infoSection__registeredDate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .infoSection__dateSkeleton {
+    height: 20px;
+    width: 100px;
+  }
+
+  .infoSection__details {
+    padding: 20px 25px;
+  }
+
+  .infoSection__infoBox {
+    margin-top: 20px;
+  }
+}

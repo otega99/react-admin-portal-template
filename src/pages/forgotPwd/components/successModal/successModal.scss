@@ -1,0 +1,15 @@
+@use 'styles' as *;
+
+.passwordSuccess {
+  background-color: color(sn-white);
+  width: 500px;
+  padding: 30px;
+
+  .passwordSuccess__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}

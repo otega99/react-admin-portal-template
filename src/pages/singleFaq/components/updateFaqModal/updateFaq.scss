@@ -1,0 +1,18 @@
+@use 'styles' as *;
+
+.faqDelete {
+  padding: 20px;
+  width: 600px;
+
+  .faqDelete__text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .faqDelete__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}

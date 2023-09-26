@@ -1,0 +1,33 @@
+@use 'styles' as *;
+
+.settings {
+  .settings__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .settings__table {
+    padding: 20px;
+    background-color: color(sn-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+
+  .settings__tableHead {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 15px 10px;
+  }
+
+  .settings__tableHeadItem {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: left;
+  }
+
+  .settings__pagination {
+    margin-top: 20px;
+  }
+}

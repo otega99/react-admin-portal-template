@@ -1,0 +1,11 @@
+@use 'styles' as *;
+
+.iselect {
+    outline: none;
+    padding: 15px 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background-color: rgba(213, 207, 207, 0.2);
+    transition: 0.2s;
+    font-family: "Montserrat", sans-serif;
+}

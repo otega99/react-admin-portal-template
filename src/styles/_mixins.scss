@@ -1,0 +1,23 @@
+@use 'function' as *;
+
+@mixin maxWidth($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+
+@mixin sectionStyles {
+  padding: 90px 0;
+
+  @include maxWidth(breakpoint(mobile)) {
+    padding: 70px 0;
+  }
+}
+
+@mixin sectionStyles2 {
+  margin: 50px 0;
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
+}

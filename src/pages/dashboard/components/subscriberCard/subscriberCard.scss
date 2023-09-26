@@ -1,0 +1,43 @@
+@use 'styles' as *;
+
+.subscriberCard {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0 10px 20px;
+  position: relative;
+
+  .subscriberCard__date {
+    color: #c5bfbf;
+  }
+
+  .subscriberCard__status {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .subscriberCard__statusBall {
+    width: 7px;
+    height: 7px;
+    border: 1px solid color(sn-primary);
+    border-radius: 50%;
+  }
+
+  .subscriberCard__statusLine {
+    width: 1px;
+    background-color: color(sn-primary);
+    flex: 1;
+  }
+
+  .subscriberCard__imgDiv {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

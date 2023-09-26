@@ -1,0 +1,21 @@
+@use 'styles' as *;
+
+.addModal {
+  background-color: color(sn-white);
+  width: 600px;
+  padding: 30px;
+
+  .addModal__header {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .addModal__btnDiv {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .addModal__btnDiv {
+    margin-top: 20px;
+  }
+}

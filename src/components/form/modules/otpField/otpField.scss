@@ -1,0 +1,24 @@
+@use 'styles' as *;
+
+.otpField {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .otpField__input {
+    outline: none;
+    padding: 10px 25px;
+    width: 70px;
+    // border: 1px solid #d9d9d9;
+    border: none;
+    border-bottom: 2px solid color(sn-black);
+    // border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+    &::placeholder {
+      color: #5a5a5a;
+    }
+  }
+}

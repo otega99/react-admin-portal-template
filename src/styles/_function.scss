@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function breakpoint($breakpoint-name) {
+  @return map-get($breakpoints, $breakpoint-name);
+}
+
+@function zIndex($zIndex-name) {
+  @return map-get($zIndex, $zIndex-name);
+}

@@ -1,0 +1,21 @@
+@use 'styles' as *;
+
+.cancelModal {
+  background-color: color(sn-white);
+  width: 600px;
+  padding: 30px;
+
+  .cancelModal__header {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .cancelModal__btnDiv {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .cancelModal__btnDiv {
+    margin-top: 20px;
+  }
+}

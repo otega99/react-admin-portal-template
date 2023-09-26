@@ -1,0 +1,31 @@
+@use 'styles' as *;
+
+.transactionRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 15px 10px;
+  text-align: left;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 650px;
+
+  &:hover {
+    background-color: darken(color(sn-white), 20);
+  }
+
+  &:nth-child(odd) {
+    background-color: rgba(213, 207, 207, 0.15);
+
+    &:hover {
+      background-color: darken(color(sn-white), 10);
+    }
+  }
+
+  .transactionRow__item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    word-break: break-all;
+  }
+}

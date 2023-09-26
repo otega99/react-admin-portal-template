@@ -1,0 +1,47 @@
+@use 'styles' as *;
+
+.customerRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 15px 10px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 650px;
+  gap: 10px;
+
+  &:hover {
+    background-color: darken(color(sn-white), 20);
+  }
+
+  &:nth-child(odd) {
+    background-color: rgba(213, 207, 207, 0.15);
+
+    &:hover {
+      background-color: darken(color(sn-white), 10);
+    }
+  }
+
+  .customerRow__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    word-break: break-all;
+  }
+
+  .customerRow__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .customerRow__emptyImg {
+    display: flex;
+
+    svg {
+      font-size: 1.7rem;
+    }
+  }
+}

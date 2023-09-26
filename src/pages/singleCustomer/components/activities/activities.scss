@@ -1,0 +1,12 @@
+@use 'styles' as *;
+
+.cActivities {
+  box-shadow: 0px 4px 8px 2px rgba(32, 32, 32, 0.05);
+  border-radius: 10px;
+  padding: 20px 25px;
+  background-color: color(sn-white);
+
+  .cActivities__list {
+    margin-top: 30px;
+  }
+}

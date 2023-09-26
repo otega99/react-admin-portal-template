@@ -1,0 +1,17 @@
+.breadCrumb {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: max-content;
+  // box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+
+  .breadCrumb__itemContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadCrumb__separator {
+    margin: 0 5px;
+  }
+}

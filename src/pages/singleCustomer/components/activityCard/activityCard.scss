@@ -1,0 +1,42 @@
+@use 'styles' as *;
+
+.activityCard {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 0 10px 30px;
+  position: relative;
+
+  .activityCard__name {
+    color: #c5bfbf;
+    margin-bottom: 5px;
+  }
+
+  .activityCard__date {
+    font-weight: 500;
+  }
+
+  .activityCard__status {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .activityCard__statusBall {
+    width: 10px;
+    height: 10px;
+    background-color: color(sn-primary);
+    border: 1px solid color(sn-primary);
+    border-radius: 50%;
+  }
+
+  .activityCard__statusLine {
+    width: 1px;
+    background-color: color(sn-primary);
+    flex: 1;
+  }
+}

@@ -1,0 +1,15 @@
+@use 'styles' as *;
+
+.linkTag {
+  text-decoration: none;
+  color: color(sn-offWhite);
+  transition: 0.3s;
+
+  &.linkTag--primary {
+    color: color(sn-primary);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

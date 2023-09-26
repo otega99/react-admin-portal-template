@@ -1,0 +1,19 @@
+@use 'styles' as *;
+
+.breadCrumbItem__text {
+  color: #333;
+  font-weight: 600;
+  display: flex;
+
+  .skeleton {
+    width: 100px;
+    height: 20px;
+  }
+}
+
+.breadCrumbItem__link {
+  text-decoration: none;
+  font-weight: 400;
+  color: color(sn-black);
+  // color: rgb(89, 102, 203);
+}

@@ -1,0 +1,29 @@
+$colors: (
+  sn-primary: #f8b602,
+  sn-black: #09041c,
+  sn-black2: #202020,
+  sn-gray: #d5cfcf33,
+  sn-lightGray: #e5e5e5,
+  sn-primaryDark: #131740,
+  sn-secondary: #57287f,
+  sn-creamWhite: #fafbff,
+  sn-danger: #d93f21,
+  sn-red: #ff554b,
+  sn-white: #ffffff,
+  sn-offWhite: #f5f5f5,
+  sn-success: #32ca32
+);
+
+$breakpoints: (
+  laptop: 1439px,
+  tablet: 1023px,
+  mobile: 767px
+);
+
+$zIndex: (
+  50: 50,
+  40: 40,
+  30: 30,
+  20: 20,
+  10: 10
+);
